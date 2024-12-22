@@ -18,6 +18,7 @@ function validateEmail(event) {
 
 email.addEventListener("input", validateEmail);
 
+// Luhn algorithm
 function validateCard2() {
   const num = card.value;
 
@@ -48,7 +49,7 @@ card.addEventListener("input", () => {
 
 submitForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  window.location.href = `mailto:test@dn-uk.com?subject=Hello&body=This%20is%20a%20test%20email%20for
+  window.location.href = `mailto:test@dn-uk.com?subject=test&body=This%20is%20a%20test%20email%20for
   %0AName%3A%20${formName.value}
   %0AEmail%3A%20${formEmail.value}
   %0ACard%3A%20${formCard.value}`;
